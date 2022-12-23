@@ -5,6 +5,6 @@ spring:
       password: eureka
 eureka:
   client:
-    register-with-eureka: false
+    enabled: false
 server:
   port: 8761
