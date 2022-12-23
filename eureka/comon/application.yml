@@ -3,3 +3,8 @@ spring:
     user:
       name: eureka
       password: eureka
+eureka:
+  client:
+    register-with-eureka: false
+server:
+  port: 8761
