@@ -1,0 +1,13 @@
+spring:
+    gateway:
+      routes:
+        - id: produit-service
+          uri: lb://produit-service
+          predicates:
+            - "Path=/produit/**"
+        - id: client-service
+          uri: lb://client-service
+          predicates:
+            - "Path=/client/**"
+server:
+  port: 8081
