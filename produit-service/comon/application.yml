@@ -2,3 +2,4 @@ server:
   servlet:
     context-path: /produit
   port: 9001
+  f: 3
