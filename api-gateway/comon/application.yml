@@ -11,5 +11,8 @@ spring:
             - "Path=/client/**"
         id: facture-service
           uri: lb://facture-service
+          predicates :
+             - "Path=/facture/**"
+            
 server:
   port: 8081
