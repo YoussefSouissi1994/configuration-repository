@@ -9,5 +9,7 @@ spring:
           uri: lb://client-service
           predicates:
             - "Path=/client/**"
+        id: facture-service
+          uri: lb://facture-service
 server:
   port: 8081
