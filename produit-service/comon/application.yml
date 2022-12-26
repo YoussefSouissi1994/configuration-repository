@@ -1,4 +1,4 @@
 server:
   servlet:
-    context-path: /facture
-  port: 9003
+    context-path: /produit
+  port: 9002
