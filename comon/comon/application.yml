@@ -11,6 +11,8 @@ spring:
         url: http://localhost:5000
         instance:
           service-host-type: ip
+  kafka:
+    bootstrap-servers: localhost:9092
 management:
   endpoints:
     web:

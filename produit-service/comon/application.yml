@@ -2,3 +2,6 @@ server:
   servlet:
     context-path: /produit
   port: 9001
+spring:
+  kafka:
+    clientId: produit-service

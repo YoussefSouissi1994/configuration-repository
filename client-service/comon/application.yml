@@ -2,3 +2,6 @@ server:
   servlet:
     context-path: /client
   port: 9002
+spring:
+  kafka:
+    clientId: client-service
