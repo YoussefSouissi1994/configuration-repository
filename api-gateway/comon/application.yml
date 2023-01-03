@@ -12,7 +12,15 @@ spring:
         - id: facture-service
           uri: lb://facture-service
           predicates :
-             - "Path=/facture/**"
+            - "Path=/facture/**"
+        - id: reglement-service
+          uri: lb://reglement-service
+          predicates :
+            - "Path=/reglement/**"
+        - id: stock-service
+          uri: lb://stock-service
+          predicates :
+            - "Path=/stock/**"
             
 server:
   port: 8081
