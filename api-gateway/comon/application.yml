@@ -1,4 +1,5 @@
 spring:
+  cloud:
     gateway:
       routes:
         - id: produit-service
@@ -21,6 +22,15 @@ spring:
           uri: lb://stock-service
           predicates :
             - "Path=/stock/**"
-            
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
 server:
   port: 8081
