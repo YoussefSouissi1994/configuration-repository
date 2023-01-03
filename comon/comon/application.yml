@@ -13,6 +13,11 @@ spring:
           service-host-type: ip
   kafka:
     bootstrap-servers: localhost:9092
+  data:
+    mongodb:
+      database: gestion-produit
+      host: localhost
+      port: 27017
 management:
   endpoints:
     web:
